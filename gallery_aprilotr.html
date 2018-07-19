@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Department of Physiology | Perelman School Of Medicine | University of Pennsylvania | Philadelphia, Pa</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/> <!--Styles-->
+        <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" /> <!--Slider-->
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic' rel='stylesheet' type='text/css'> <!--Google Fonts-->
+        <!--Meta Tags-->
+        <meta name="description" content="The academic mission of the Department of Physiology is to foster research and teaching that elucidates the functioning of tissues and organisms.">
+        <meta name="keywords" content="university of pennsylvania, upenn, medicine, physiology">
+        <meta name="copyright" content="2014 University of Pennsylvania. All rights reserved.">
+        <meta name="zipcode" content="19104-6085">
+        <meta name="city" content="Philadelphia">
+        <meta name="state" content="PA">
+        <meta name="country" content="United States">
+        <meta name="language" content="EN">
+        <!--End Meta Tags-->
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <link href="gallery/css/jquery.galleryview-3.0-dev.css" rel="stylesheet" type="text/css" />
+        <script src="gallery/js/jquery.easing.1.3.js"></script>
+        <script src="gallery/js/jquery.galleryview-3.0-dev.js"></script>
+        <script src="gallery/js/jquery.timers-1.2.js"></script>
+        
+        <!--Drop Down JavaScript-->
+        <script type="text/javascript">
+            
+            function DropDown(el) {
+                this.dd = el;
+                this.placeholder = this.dd.children('span');
+                this.opts = this.dd.find('ul.dropdown > li');
+                this.val = '';
+                this.index = -1;
+                this.initEvents();
+            }
+            DropDown.prototype = {
+                initEvents : function() {
+                    var obj = this;
+
+                    obj.dd.on('click', function(event){
+                        $(this).toggleClass('active');
+                        return false;
+                    });
+                    
+                    $(document).click(function() {
+                        if($(dd6).hasClass('active')){
+                            $(dd6).toggleClass('active');
+                        }
+                    });
+
+                    obj.opts.on('click',function(){
+                        var opt = $(this);
+                        obj.val = opt.text();
+                        obj.index = opt.index();
+                        obj.placeholder.text(obj.val);
+                        obj.val = $(this).children('a').attr('href');
+                        window.location=(obj.val);
+                    });
+                },
+                getValue : function() {
+                    return this.val;
+                },
+                getIndex : function() {
+                    return this.index;
+                }
+            }
+
+            $(function() {
+
+                var dd6 = new DropDown( $('#dd6') );
+
+                $(document).hover(function() {
+                    // all dropdowns
+                    $('.wrapper-dropdown-1').removeClass('active');
+                });
+
+            });
+            
+        </script><!--End Drop Down JavaScript-->
+    </head>
+    
+    <body>
+    <div id="container">
+        <div id="header">
+            <a href="http://www.med.upenn.edu" target="_blank"><img src="images/general/perelman_logo.png" class="logo"></a>
+            <ul id="nav">
+                <li class="nav1"><h3><a href="index.html">HOME</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="faculty.html">FACULTY</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="department.html">DEPARTMENT</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="events.html">EVENTS</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="education.html">EDUCATION</a></h3></li>
+            </ul><!--End Nav-->
+            <h1 id="title">DEPARTMENT <span class="of">of</span> PHYSIOLOGY</h1>           
+        </div><!--End Header-->
+        
+        <div id="content">
+        <!--start gallery-->
+            <div id="gallerycontent">
+            <ul id="photo_gall">
+                <li><img src="gallery/images/happyhour_april/IMG_1242.jpg"></li>
+                <li><img src="gallery/images/happyhour_april/IMG_1244.jpg"></li>
+                <li><img src="gallery/images/happyhour_april/IMG_1260.jpg"></li>
+                <li><img src="gallery/images/happyhour_april/IMG_1278.jpg"></li>
+            </ul>
+            </div><!--end gallery-->
+            
+            <div id="gallery_info">
+                <h2>Photo Galleries</h2>
+                <br class="clear">
+                
+                <div id="album_menu">
+                <div id="dd6" class="wrapper-dropdown-1" tabindex="1">
+                        <span><h5>Photo Albums</h5></span>
+                        <ul class="dropdown" tabindex="1">
+                        	<li><a href="gallery_sweeneyreception.html">Sweeney Lab Farewell</a></li>
+                            <li><a href="gallery_retreat2015.html">Department Retreat 2015</a></li>
+                            <li><a href="gallery_dominguezotr.html">Dominguez On the Road Reception</a></li>
+                            <li><a href="gallery_civansymposium.html">Civan Retirement Symposium</a></li>
+                            <li><a href="gallery_grishchukotr.html">Grishchuk On the Road Reception</a></li>
+                            <li><a href="gallery_holzbaurotr.html">Holzbaur On the Road Reception</a></li>
+                            <li><a href="gallery_2014_Holiday_Party.html">Holiday Party 2014</a></li>
+                            <li><a href="gallery_baurotr.html">Baur On the Road Reception</a></li>
+                            <li><a href="gallery_janmeyotr.html">Janmey On the Road Reception</a></li>
+                            <li><a href="gallery_foskett_houseparty.html">Welcome to Fall Gathering</a></li>
+                            <li><a href="gallery_fisherotr.html">Fisher On the Road Reception</a></li>
+                            <li><a href="gallery_sweeneyotr.html">Sweeney On the Road Reception</a></li>
+                            <li><a href="gallery_ferguson.html">Ferguson On the Road Reception</a></li>
+                            <li><a href="gallery_retreat.html">Department Retreat 2014</a></li>
+                            <li><a href="gallery_ostapotr.html">Ostap On the Road Reception</a></li>
+                            <li><a href="gallery_foskettrecep.html">Dr. Foskett Welcome Reception</a></li>
+                            <li><a href="gallery_aprilotr.html">Department Happy Hour</a></li>
+                            <li><a href="gallery_decholiday.html">December Holiday Party</a></li>
+                        </ul>
+                    </div>
+                    </div><!--End Galery Drop-Down-->
+                
+                <h4>Department Happy Hour - April 4, 2014</h4>
+                <p>The Department organized a last-minute happy hour for faculty and staff to gather together and enjoy a Friday afternoon.</p>
+                
+                <p><a href="events.html">&#60; Return to Event Calendar</a></p>
+            </div><!--end gallery info-->
+            
+    </div><!--end content-->
+    </div><!--end container-->
+        
+    <div id="footer">
+        <div class="footercontent">
+            <ul id="footer1">
+                <li><p>700 Clinical Research Building</p></li>
+                <li><p>415 Curie Boulevard</p></li>
+                <li><p>Philadelphia, PA 19104</p></li>
+            </ul><!--End Footer1-->
+            <ul id="footer2">
+                <li><p>tel: 215-898-8725</p></li>
+                <li><p>fax: 215-573-2273</p></li>
+                <li><p><a href="mailto:phys@mail.med.upenn.edu">phys@mail.med.upenn.edu</a></p></li>
+            </ul><!--End Footer2-->
+            <div id="footer3">
+                <div class="social1" onClick="window.open( 'https://www.facebook.com/UPennPhys?fref=ts','_blank' ); return false;"><img src="images/general/social/facebook.png"></div>
+                <div class="social1" onClick="window.open( 'http://www.twitter.com/UPennPhysiology','_blank' ); return false;"><img src="images/general/social/twitter.png"></div>
+                <div class="social1" onClick="window.open( 'http://instagram.com/upenn_physiology#','_blank' ); return false;"><img src="images/general/social/instagram.png"></div>
+                <div class="social2" onClick="window.open( '#','_self' ); return false;"><p>Go To Top</p></div>
+            </div><!--End Footer3-->
+                <br class="clear">
+            <div class="copyright">
+                <p class="sitemaplink"><a href="sitemap.html">Site Map</a></p>
+                <p>© 2016 University Of Pennsylvania. All rights are reserved.</p>
+            </div><!--End Copyright-->
+        </div><!--End Footer content-->
+    </div><!--End Footer-->
+        
+        
+        <script type="text/javascript">
+            $('#photo_gall').galleryView({
+                panel_width: 700,
+                panel_height: 500,
+                frame_width: 120,
+                frame_height: 90,
+                panel_animation: 'crossfade',
+                show_captions: 'true',
+                panel_scale: 'fit'
+            });  
+        </script>
+    </body>
+</html>

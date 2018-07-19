@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Department of Physiology | Perelman School Of Medicine | University of Pennsylvania | Philadelphia, Pa</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/> <!--Styles-->
+        <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />  
+        
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic' rel='stylesheet' type='text/css'> <!--Google Fonts-->
+        <!--Meta Tags-->
+        <meta name="description" content="The academic mission of the Department of Physiology is to foster research and teaching that elucidates the functioning of tissues and organisms.">
+        <meta name="keywords" content="university of pennsylvania, upenn, medicine, physiology">
+        <meta name="copyright" content="2014 University of Pennsylvania. All rights reserved.">
+        <meta name="zipcode" content="19104-6085">
+        <meta name="city" content="Philadelphia">
+        <meta name="state" content="PA">
+        <meta name="country" content="United States">
+        <meta name="language" content="EN">
+        <!--End Meta Tags-->
+        <!--Drop Down JavaScript-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            function DropDown(el) {
+                this.dd = el;
+                this.placeholder = this.dd.children('span');
+                this.opts = this.dd.find('ul.dropdown > li');
+                this.val = '';
+                this.index = -1;
+                this.initEvents();
+            }
+            DropDown.prototype = {
+                initEvents : function() {
+                    var obj = this;
+
+                    obj.dd.on('click', function(event){
+                        $(this).toggleClass('active');
+                        return false;
+                    });
+                    
+                    $(document).click(function() {
+                        if($(dd5).hasClass('active')){
+                            $(dd5).toggleClass('active');
+                        }
+                    });
+
+                    obj.opts.on('click',function(){
+                        var opt = $(this);
+                        obj.val = opt.text();
+                        obj.index = opt.index();
+                        obj.placeholder.text(obj.val);
+                        obj.val = $(this).children('a').attr('href');
+                        window.location=(obj.val);
+                    });
+                },
+                getValue : function() {
+                    return this.val;
+                },
+                getIndex : function() {
+                    return this.index;
+                }
+            }
+
+            $(function() {
+
+                var dd5 = new DropDown( $('#dd5') );
+
+                $(document).hover(function() {
+                    // all dropdowns
+                    $('.wrapper-dropdown-1').removeClass('active');
+                });
+
+            });
+            
+        </script><!--End Drop Down JavaScript-->
+    </head>
+    <body>
+    <div id="container">
+        <div id="header">
+            <a href="http://www.med.upenn.edu" target="_blank"><img src="images/general/perelman_logo.png" class="logo"></a>
+            <ul id="nav">
+                <li class="nav1"><h3><a href="index.html">HOME</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h5>FACULTY</h5></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="department.html">DEPARTMENT</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="events.html">EVENTS</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="education.html">EDUCATION</a></h3></li>
+            </ul><!--End Nav-->
+            <h1 id="title">DEPARTMENT <span class="of">of</span> PHYSIOLOGY</h1>           
+        </div><!--End Header-->
+        
+        <div id="content">
+        
+      	    <!--Header Image-->		
+            <img src="images/faculty/faculty2016.jpg" class="banner">
+            
+            <div id="facultygroup"></div>
+            
+            <div class="facultyleft">
+                <h2>Transmembrane Transport</h2>
+                <br class="clear">
+                <p>Transport proteins, including pumps, transporters and ion channels are integral membrane proteins that function in facilitating the translocation of solutes across plasma membranes as well as membranes of intracellular organelles. Transport proteins establish intra- and extracellular solute concentrations, generate membrane potentials and electrical signals, control the flow of solutes across epithelia and regulate cell volume. Members of our department are leaders in a many areas of basic and translational solute transport research.  Our research teams are (a) determining molecular mechanisms by which channels select the ions that can flow through them, (b) identifying structural and molecular influences that regulate how ion channels open and close, (c) discovering transport mechanisms that maintain ionic and fluid homeostasis properties in various organs, including lungs and eyes, (d) exploring biogenesis of transport proteins, (e) and exploring physiological roles of solute transport in various normal and pathophysiological conditions, including cystic fibrosis and Alzheimer’s disease.<br><br><a href="faculty.html">&#60; Return To All Faculty</a></p>
+            </div><!--End Intro Left-->
+            
+            <div class="facultyright">
+              <h2>Research Areas</h2>
+              <br class="clear">
+              <ul id="researchareas">
+                  <div id="dd5" class="wrapper-dropdown-1" tabindex="1">
+                        <span><h5>Faculty of Transmemb...</h5></span>
+                        <ul class="dropdown" tabindex="1">
+                            <li><a href="faculty_armstrong.html">Clay M. Armstrong, MD</a></li>
+                            <li><a href="faculty_baylor.html">Stephen Baylor, MD</a></li>
+                            <li><a href="faculty_civan.html">Mortimer Civan, MD</a></li>
+                            <li><a href="faculty_deutsch.html">Carol Deutsch, PhD</a></li>
+                            <li><a href="faculty_foskett.html">J. Kevin Foskett, PhD</a></li>
+                            <li><a href="faculty_hoshi.html">Toshinori Hoshi, PhD</a></li>
+                            <li><a href="faculty_lee.html">Robert Lee, PhD</a></li>
+                            <li><a href="faculty_lu.html">Zhe Lu, MD, PhD</a></li>
+                            <li><a href="faculty_mitchell.html">Claire Mitchell, PhD</a></li>
+                        </ul>
+                    </div>
+                  <li><p><a href="faculty_acategory_cell_motility.html#facultygroup">Cytoskeleton, Motor Proteins & Cell & Organellar Motility</a></p></li>
+                  <li><p><a href="faculty_acategory_integrative.html#facultygroup">Integrative Physiology & Metabolism</a></p></li>
+                  <li><p><a href="faculty_acategory_signal_transduction.html#facultygroup">Signal Transduction</a></p></li>
+                  <li><p><a href="faculty_acategory_skeletal_cardiac.html#facultygroup">Skeletal, Cardiac, and Smooth Muscle</a></p></li>
+                  <li><p>Transmembrane Transport</p></li>
+                  <br>
+              </ul><!--End Research Areas-->
+              
+            </div><!--End Intro Right-->
+            
+            <br class="clear">
+            
+            <img src="images/general/div1.png" class="divider">
+            
+            <div id="facultylist">
+            <div class="facultymember">
+                <a href="faculty_armstrong.html"><img src="images/faculty/headshots/clay_armstrong.jpg"></a>
+                <h4>Clay M. Armstrong, MD</h4>
+                <p>Emeritus Professor</p>
+                <p>B701 Richards Building</p>
+                <p>215-898-7816</p>
+                <p><a href="mailto:carmstro@pennmedicine.upenn.edu">carmstro@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_armstrong.html">View Profile</a></p>
+            </div>
+            
+             <div class="facultymember">
+                <a href="faculty_baylor.html"><img src="images/faculty/headshots/steve_bayler.jpg"></a>
+                <h4>Stephen Baylor, MD</h4>
+                <p>Professor</p>
+                <p>A303 Richards Building</p>
+                <p>215-898-5559</p>
+                <p><a href="mailto:baylor@pennmedicine.upenn.edu">baylor@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_baylor.html">View Profile</a></p>
+            </div>
+
+            <div class="facultymember">
+                <a href="faculty_civan.html"><img src="images/faculty/headshots/mortimer_civan.jpg"></a>
+                <h4>Mortimer Civan, MD</h4>
+                <p>Emeritus Professor</p>
+                <p>A303 Richards Building</p>
+                <p>215-898-8773</p>
+                <p><a href="mailto:civan@pennmedicine.upenn.edu">civan@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_civan.html">View Profile</a></p>
+            </div>
+            
+             <div class="facultymember2">
+                <a href="faculty_deutsch.html"><img src="images/faculty/headshots/carol_deutsch_2014.jpg"></a>
+                <h4>Carol Deutsch, PhD</h4>
+                <p>Professor</p>
+                <p>650A Clinical Research Building</p>
+                <p>215-898-8014</p>
+                <p><a href="mailto:cjd@pennmedicine.upenn.edu">cjd@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_deutsch.html">View Profile</a></p>
+            </div>
+                
+                <br class="clear">
+            
+             <div class="facultymember">
+                <a href="faculty_foskett.html"><img src="images/faculty/headshots/kevin_foskett_2016.jpg"></a>
+                <h4>J. Kevin Foskett, PhD</h4>
+                <p>Isaac Ott Professor</p>
+                <p>Chair of Physiology</p>
+                <p>700D Clinical Research Building</p>
+                <p>215-898-1354</p>
+                <p><a href="mailto:foskett@pennmedicine.upenn.edu">foskett@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_foskett.html">View Profile</a></p>
+             </div>
+                
+             <div class="facultymember">
+                <a href="faculty_hoshi.html"><img src="images/faculty/headshots/toshinori_hoshi.jpg"></a>
+                <h4>Toshinori Hoshi, PhD</h4>
+                <p>Professor</p>
+                <p>605B Clinical Research Building</p>
+                <p>215-573-7305</p>
+                <p><a href="mailto:hoshi@pennmedicine.upenn.edu">hoshi@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_hoshi.html">View Profile</a></p>
+            </div>
+                
+                <div class="facultymember">
+                <a href="faculty_lee.html"><img src="images/faculty/headshots/robert_lee.jpg"></a>
+                <h4>Robert Lee, PhD</h4>
+                <p>Assistant Professor</p>
+                <p>145A Clinical Research Building</p>
+                <p>215-573-9766</p>
+                <p><a href="mailto:rjl@pennmedicine.upenn.edu">rjl@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_lee.html">View Profile</a></p>
+            </div>
+                
+             <div class="facultymember2">
+                <a href="faculty_lu.html"><img src="images/faculty/headshots/zhe_lu.jpg"></a>
+                <h4>Zhe Lu, MD, PhD</h4>
+                <p>Professor</p>
+                <p>664 Clinical Research Building</p>
+                <p>215-573-7711</p>
+                <p><a href="mailto:zhelu@pennmedicine.upenn.edu">zhelu@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_lu.html">View Profile</a></p>
+            </div>
+            
+                 <br class="clear">  
+                              
+            <div class="facultymember">
+                <a href="faculty_mitchell.html"><img src="images/faculty/headshots/claire_mitchell.jpg"></a>
+                <h4>Claire Mitchell, PhD</h4>
+                <p>Professor</p>
+                <p>440 Levy Labs</p>
+                <p>215-573-2176</p>
+                <p><a href="mailto:chm@pennmedicine.upenn.edu">chm@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_mitchell.html">View Profile</a></p>
+            </div>
+                
+
+            
+            </div><!--End Faculty List-->
+            
+            <br class="clear">
+            
+        </div><!--End Content-->
+    </div><!--End Container-->
+        
+    <div id="footer">
+        <div class="footercontent">
+            <ul id="footer1">
+                <li><p>700 Clinical Research Building</p></li>
+                <li><p>415 Curie Boulevard</p></li>
+                <li><p>Philadelphia, PA 19104</p></li>
+            </ul><!--End Footer1-->
+            <ul id="footer2">
+                <li><p>tel: 215-898-8725</p></li>
+                <li><p>fax: 215-573-2273</p></li>
+                <li><p><a href="mailto:phys@pennmedicine.upenn.edu">phys@pennmedicine.upenn.edu</a></p></li>
+            </ul><!--End Footer2-->
+            <div id="footer3">
+                <div class="social1" onClick="window.open( 'https://www.facebook.com/UPennPhys?fref=ts','_blank' ); return false;"><img src="images/general/social/facebook.png"></div>
+                <div class="social1" onClick="window.open( 'http://www.twitter.com/UPennPhysiology','_blank' ); return false;"><img src="images/general/social/twitter.png"></div>
+                <div class="social1" onClick="window.open( 'http://instagram.com/upenn_physiology#','_blank' ); return false;"><img src="images/general/social/instagram.png"></div>
+                <div class="social2" onClick="window.open( '#','_self' ); return false;"><p>Go To Top</p></div>
+            </div><!--End Footer3-->
+                <br class="clear">
+            <div class="copyright">
+                <p class="sitemaplink"><a href="sitemap.html">Site Map</a></p>
+                <p>© 2018 University of Pennsylvania. All rights are reserved.</p>
+            </div><!--End Copyright-->
+        </div><!--End Footer content-->
+    </div><!--End Footer-->
+
+    </body>
+</html>

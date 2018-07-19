@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Department of Physiology | Perelman School Of Medicine | University of Pennsylvania | Philadelphia, Pa</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/> <!--Styles-->
+        <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />  
+        
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic' rel='stylesheet' type='text/css'> <!--Google Fonts-->
+        <!--Meta Tags-->
+        <meta name="description" content="The academic mission of the Department of Physiology is to foster research and teaching that elucidates the functioning of tissues and organisms.">
+        <meta name="keywords" content="university of pennsylvania, upenn, medicine, physiology">
+        <meta name="copyright" content="2014 University of Pennsylvania. All rights reserved.">
+        <meta name="zipcode" content="19104-6085">
+        <meta name="city" content="Philadelphia">
+        <meta name="state" content="PA">
+        <meta name="country" content="United States">
+        <meta name="language" content="EN">
+        <!--End Meta Tags-->
+        <!--Drop Down JavaScript-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            function DropDown(el) {
+                this.dd = el;
+                this.placeholder = this.dd.children('span');
+                this.opts = this.dd.find('ul.dropdown > li');
+                this.val = '';
+                this.index = -1;
+                this.initEvents();
+            }
+            DropDown.prototype = {
+                initEvents : function() {
+                    var obj = this;
+
+                    obj.dd.on('click', function(event){
+                        $(this).toggleClass('active');
+                        return false;
+                    });
+                    
+                    $(document).click(function() {
+                        if($(dd5).hasClass('active')){
+                            $(dd5).toggleClass('active');
+                        }
+                    });
+
+                    obj.opts.on('click',function(){
+                        var opt = $(this);
+                        obj.val = opt.text();
+                        obj.index = opt.index();
+                        obj.placeholder.text(obj.val);
+                        obj.val = $(this).children('a').attr('href');
+                        window.location=(obj.val);
+                    });
+                },
+                getValue : function() {
+                    return this.val;
+                },
+                getIndex : function() {
+                    return this.index;
+                }
+            }
+
+            $(function() {
+
+                var dd = new DropDown( $('#dd') );
+
+                $(document).hover(function() {
+                    // all dropdowns
+                    $('.wrapper-dropdown-1').removeClass('active');
+                });
+
+            });
+            
+        </script><!--End Drop Down JavaScript-->
+    </head>
+    <body>
+    <div id="container">
+        <div id="header">
+            <a href="http://www.med.upenn.edu" target="_blank"><img src="images/general/perelman_logo.png" class="logo"></a>
+            <ul id="nav">
+                <li class="nav1"><h3><a href="index.html">HOME</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h5>FACULTY</h5></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="department.html">DEPARTMENT</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="events.html">EVENTS</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="education.html">EDUCATION</a></h3></li>
+            </ul><!--End Nav-->
+            <h1 id="title">DEPARTMENT <span class="of">of</span> PHYSIOLOGY</h1>           
+        </div><!--End Header-->
+        
+        <div id="content">
+        
+      	    <!--Header Image-->		
+            <img src="images/faculty/faculty2016.jpg" class="banner">
+            
+            <div id="facultygroup"></div>
+            
+            <div class="facultyleft">
+                <h2>Cytoskeleton, Motor Proteins and Cell & Organellar Motility</h2>
+                <br class="clear">
+                <p>The cytoskeleton and its associated molecular motors make up the fundamental cellular machinery that is crucial for the structural development, shape, and remodeling of tissues and organs.  Cytoskeletal proteins and related signaling pathways are also crucial for powering cell migration and controlling the organization and transport of internal cell compartments.  Members of the department use a range of single-molecule, structural, and cellular techniques to investigate the cytoskeleton in health and disease.<br><br><a href="faculty.html">&#60; Return To All Faculty</a></p>
+            </div><!--End Intro Left-->
+            
+            <div class="facultyright">
+              <h2>Research Areas</h2>
+              <br class="clear">
+              <ul id="researchareas">
+                  <div id="dd" class="wrapper-dropdown-1" tabindex="1">
+                        <span><h5>Faculty of Cytoskeleton</h5></span>
+                        <ul class="dropdown" tabindex="1">
+                            <li><a href="faculty_dominguez.html">Roberto Dominguez, PhD</a></li>
+                            <li><a href="faculty_goldman.html">Yale Goldman, MD, PhD</a></li>
+                            <li><a href="faculty_grishchuk.html">Ekaterina Grishchuk, PhD</a></li>
+                            <li><a href="faculty_holzbaur.html">Erika Holzbaur, PhD</a></li>
+                            <li><a href="faculty_janmey.html">Paul Janmey, PhD</a></li>
+                            <li><a href="faculty_lakadamyali.html">Melike Lakadamyali, PhD</a></li>
+                            <li><a href="faculty_marks.html">Michael S. Marks, PhD</a></li>
+                            <li><a href="faculty_ostap.html">Michael Ostap, PhD</a></li>
+                            <li><a href="faculty_pring.html">Martin Pring, DPhil</a></li>
+                            <li><a href="faculty_prosser.html">Benjamin Prosser, PhD</a></li>
+                            <li><a href="faculty_sweeney.html">H. Lee Sweeney, PhD</a></li>
+                            <li><a href="faculty_winegrad.html">Saul Winegrad, MD</a></li>
+                        </ul>
+                    </div>
+                  <li><p>Cytoskeleton, Motor Proteins & Cell & Organellar Motility</p></li>
+                  <li><p><a href="faculty_acategory_integrative.html#facultygroup">Integrative Physiology & Metabolism</a></p></li>
+                  <li><p><a href="faculty_acategory_signal_transduction.html#facultygroup">Signal Transduction</a></p></li>
+                  <li><p><a href="faculty_acategory_skeletal_cardiac.html#facultygroup">Skeletal, Cardiac, and Smooth Muscle</a></p></li>
+                  <li><p><a href="faculty_acategory_transmembrane.html#facultygroup">Transmembrane Transport</a></p></li>
+                  <br>
+              </ul><!--End Research Areas-->
+              
+            </div><!--End Intro Right-->
+            
+            <br class="clear">
+            
+            <img src="images/general/div1.png" class="divider">
+            
+            <div id="facultylist">
+            <div class="facultymember">
+                <a href="faculty_dominguez.html"><img src="images/faculty/headshots/roberto_dominguez_new.jpg"></a>
+                <h4>Roberto Dominguez, PhD</h4>
+                <p>Professor</p>
+                <p>728 Clinical Research Building</p>
+                <p>215-573-4559</p>
+                <p><a href="mailto:droberto@pennmedicine.upenn.edu">droberto@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_dominguez.html">View Profile</a></p>
+            </div>
+            
+            <div class="facultymember">
+                <a href="faculty_goldman.html"><img src="images/faculty/headshots/yale_goldman.jpg"></a>
+                <h4>Yale E. Goldman, MD, PhD</h4>
+                <p>Professor</p>
+                <p>615B Clinical Research Building</p>
+                <p>215-898-4017</p>
+                <p><a href="mailto:goldmany@pennmedicine.upenn.edu">goldmany@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_goldman.html">View Profile</a></p>
+            </div>
+            
+            <div class="facultymember">
+                <a href="faculty_grishchuk.html"><img src="images/faculty/headshots/ekaterina_grishchuk.jpg"></a>
+                <h4>Ekaterina Grishchuk, PhD</h4>
+                <p>Associate Professor</p>
+                <p>675 Clinical Research Building</p>
+                <p>215-746-8178</p>
+                <p><a href="mailto:gekate@pennmedicine.upenn.edu">gekate@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_grishchuk.html">View Profile</a></p>
+            </div>
+            
+             <div class="facultymember2">
+                <a href="faculty_holzbaur.html"><img src="images/faculty/headshots/erika_holzbaur.jpg"></a>
+                <h4>Erika Holzbaur, PhD</h4>
+                <p>William Maul Measey Professor</p>
+                <p>638A Clinical Research Building</p>
+                <p>215-573-3257</p>
+                <p><a href="mailto:holzbaur@pennmedicine.upenn.edu">holzbaur@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_holzbaur.html">View Profile</a></p>
+            </div>
+            
+                <br class="clear">
+            
+            <div class="facultymember">
+                <a href="faculty_janmey.html"><img src="images/faculty/headshots/paul_janmey.jpg"></a>
+                <h4>Paul Janmey, PhD</h4>
+                <p>Professor</p>
+                <p>1010 Vagelos Labs</p>
+                <p>215-573-7380</p>
+                <p><a href="mailto:janmey@pennmedicine.upenn.edu">janmey@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_janmey.html">View Profile</a></p>
+            </div>
+            
+            <div class="facultymember">
+                <a href="faculty_lakadamyali.html"><img src="images/faculty/headshots/melike_lakadamyali_2017.jpg"></a>
+                <h4>Melike Lakadamyali, PhD</h4>
+                <p>Assistant Professor</p>
+                <p>764 Clinical Research Building</p>
+                <p>215-746-5150</p>
+                <p><a href="mailto:melikel@pennmedicine.upenn.edu">melikel@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_lakadamyali.html">View Profile</a></p>
+            </div>
+                
+            <div class="facultymember">
+                <a href="faculty_marks.html"><img src="images/faculty/headshots/michael_marks.jpg"></a>
+                <h4>Michael S. Marks, PhD</h4>
+                <p>Professor</p>
+                <p>1107B Abramson Research Center</p>
+                <p>215-590-3664</p>
+                <p><a href="mailto:marksm@pennmedicine.upenn.edu">marksm@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_marks.html">View Profile</a></p>
+            </div>
+            
+            <div class="facultymember2">
+                <a href="faculty_ostap.html"><img src="images/faculty/headshots/michael_ostap.jpg"></a>
+                <h4>Michael Ostap, PhD</h4>
+                <p>Professor</p>
+                <p>Director of the Pennsylvania Muscle Institute</p>
+                <p>700A Clinical Research Building</p>
+                <p>215-573-9758</p>
+                <p><a href="mailto:ostap@pennmedicine.upenn.edu">ostap@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_ostap.html">View Profile</a></p>
+            </div>
+            
+	  		 <br class="clear">
+            
+             <div class="facultymember">
+                <a href="faculty_pring.html"><img src="images/faculty/headshots/martin_pring.jpg"></a>
+                <h4>Martin Pring, DPhil</h4>
+                <p>Associate Professor</p>
+                <p>C200 Richards Building</p>
+                <p>215-898-6870</p>
+                <p><a href="mailto:pringm@pennmedicine.upenn.edu">pringm@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_pring.html">View Profile</a></p>
+            </div>
+            
+            <div class="facultymember">
+                <a href="faculty_prosser.html"><img src="images/faculty/headshots/ben_prosser_2016.jpg"></a>
+                <h4>Benjamin Prosser, PhD</h4>
+                <p>Assistant Professor</p>
+                <p>726 Clinical Research Building</p>
+                <p>215-746-1488</p>
+                <p><a href="mailto:bpros@pennmedicine.upenn.edu">bpros@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_prosser.html">View Profile</a></p>
+            </div>
+            
+            <div class="facultymember">
+                <a href="faculty_sweeney.html"><img src="images/faculty/headshots/lee_sweeney.jpg"></a>
+                <h4>H. Lee Sweeney, PhD</h4>
+                <p>Emeritus Professor</p>
+                 <p></p>
+                <p></p>
+                <p>215-898-8725</p>
+                <p><a href="mailto:lsweeney@pennmedicine.upenn.edu">lsweeney@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_sweeney.html">View Profile</a></p>
+            </div>
+            
+             <div class="facultymember2">
+                <a href="faculty_winegrad.html"><img src="images/faculty/headshots/saul_winegrad.jpg"></a>
+                <h4>Saul Winegrad, MD</h4>
+                <p>Emeritus Professor</p>
+                <p>B307 Richards Building</p>
+                <p>215-898-7017</p>
+                <p><a href="mailto:bsg@pennmedicine.upenn.edu">bsg@pennmedicine.upenn.edu</a></p>
+                <p><a href="faculty_winegrad.html">View Profile</a></p>
+            </div>
+                
+            
+            
+            </div><!--End Faculty List-->
+            
+            <br class="clear">
+            
+        </div><!--End Content-->
+    </div><!--End Container-->
+        
+    <div id="footer">
+        <div class="footercontent">
+            <ul id="footer1">
+                <li><p>700 Clinical Research Building</p></li>
+                <li><p>415 Curie Boulevard</p></li>
+                <li><p>Philadelphia, PA 19104</p></li>
+            </ul><!--End Footer1-->
+            <ul id="footer2">
+                <li><p>tel: 215-898-8725</p></li>
+                <li><p>fax: 215-573-2273</p></li>
+                <li><p><a href="mailto:phys@pennmedicine.upenn.edu">phys@pennmedicined.upenn.edu</a></p></li>
+            </ul><!--End Footer2-->
+            <div id="footer3">
+                <div class="social1" onClick="window.open( 'https://www.facebook.com/UPennPhys?fref=ts','_blank' ); return false;"><img src="images/general/social/facebook.png"></div>
+                <div class="social1" onClick="window.open( 'http://www.twitter.com/UPennPhysiology','_blank' ); return false;"><img src="images/general/social/twitter.png"></div>
+                <div class="social1" onClick="window.open( 'http://instagram.com/upenn_physiology#','_blank' ); return false;"><img src="images/general/social/instagram.png"></div>
+                <div class="social2" onClick="window.open( '#','_self' ); return false;"><p>Go To Top</p></div>
+            </div><!--End Footer3-->
+                <br class="clear">
+            <div class="copyright">
+                <p class="sitemaplink"><a href="sitemap.html">Site Map</a></p>
+                <p>© 2018 University of Pennsylvania. All rights are reserved.</p>
+            </div><!--End Copyright-->
+        </div><!--End Footer content-->
+    </div><!--End Footer-->
+
+    </body>
+</html>

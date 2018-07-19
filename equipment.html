@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Department of Physiology | Perelman School Of Medicine | University of Pennsylvania | Philadelphia, Pa</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/> <!--Styles-->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"><!--Icons-->
+        <script src="js/jquery-1.11.1.min.js"></script> <!-- jquery script -->
+        <script src="js/events.js"></script> <!-- import events js -->
+        <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic' rel='stylesheet' type='text/css'> <!--Google Fonts-->
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> <!-- Font awesome -->
+
+        <!--Meta Tags-->
+        <meta name="description" content="The academic mission of the Department of Physiology is to foster research and teaching that elucidates the functioning of tissues and organisms.">
+        <meta name="keywords" content="university of pennsylvania, upenn, medicine, physiology">
+        <meta name="copyright" content="2014 University of Pennsylvania. All rights reserved.">
+        <meta name="zipcode" content="19104-6085">
+        <meta name="city" content="Philadelphia">
+        <meta name="state" content="PA">
+        <meta name="country" content="United States">
+        <meta name="language" content="EN">
+        <!--End Meta Tags-->
+
+        <!--Slideshow-->
+        <script src="js/jquery.bxslider.min2.js"></script><!--slider-->
+
+        <script>
+        $(document).ready(function(){
+
+        $('.bxslider').bxSlider({    // bxSlider init
+        mode: 'fade',
+        auto: true,
+        captions: false,
+        auto: true,
+        infiniteLoop: true,
+        hideControlOnEnd: true,
+        useCSS: false,
+        pager: false,
+        controls: false
+        });
+
+        });
+        </script>
+
+        <!--Drop Down JavaScript-->
+        <script type="text/javascript">
+
+            function DropDown(el) {
+                this.dd = el;
+                this.placeholder = this.dd.children('span');
+                this.opts = this.dd.find('ul.dropdown > li');
+                this.val = '';
+                this.index = -1;
+                this.initEvents();
+            }
+            DropDown.prototype = {
+                initEvents : function() {
+                    var obj = this;
+
+                    obj.dd.on('click', function(event){
+                        $(this).toggleClass('active');
+                        return false;
+                    });
+
+                    $(document).click(function() {
+                        if($(dd6).hasClass('active')){
+                            $(dd6).toggleClass('active');
+                        }
+                    });
+
+                    obj.opts.on('click',function(){
+                        var opt = $(this);
+                        obj.val = opt.text();
+                        obj.index = opt.index();
+                        obj.placeholder.text(obj.val);
+                        obj.val = $(this).children('a').attr('href');
+                        window.location=(obj.val);
+                    });
+                },
+                getValue : function() {
+                    return this.val;
+                },
+                getIndex : function() {
+                    return this.index;
+                }
+            }
+
+            $(function() {
+
+                var dd6 = new DropDown( $('#dd6') );
+
+                $(document).hover(function() {
+                    // all dropdowns
+                    $('.wrapper-dropdown-1').removeClass('active');
+                });
+
+            });
+
+        </script><!--End Drop Down JavaScript-->
+
+    </head>
+    <body>
+    <div id="container">
+        <div id="header">
+            <a href="http://www.med.upenn.edu" target="_blank"><img src="images/general/perelman_logo.png" class="logo"></a>
+            <ul id="nav">
+                <li class="nav1"><h3><a href="index.html">HOME</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="faculty.html">FACULTY</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="department.html">DEPARTMENT</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="events.html">EVENTS</a></h3></li>
+                <li class="nav1"><h3>|</h3></li>
+                <li class="nav1"><h3><a href="education.html">EDUCATION</a></h3></li>
+            </ul><!--End Nav-->
+            <h1 id="title">DEPARTMENT <span class="of">of</span> PHYSIOLOGY</h1>
+        </div><!--End Header-->
+
+        <div id="content">
+
+          <div class="introfullnoimage">
+                <h2>Our Equipment</h2>
+                <br class="clear">
+                <p>The Department of Physiology is committed to supporting the research and educational activities of our faculty, staff, postdocs, and students. To demonstrate this commitment, the Department maintains an extensive collection of equipment for shared use among our department members.</p>
+            </div><!--End Intro Full-->
+
+            <br class="clear">
+
+            <img src="images/general/div1.png" class="divider2">
+
+
+            <!--top tabs above cal -->
+            <div id="tabgroup" class="equipment">
+              <h5 class="tabhead" id="th1">Common Equipment</h5>
+            </div>
+
+            <!--table column headers -->
+            <div id="colheaders">
+              <div class="fivecol1"><p>Type</p></div>
+              <div class="fivecol2"><p>Location</p></div>
+              <div class="fivecol3"><p>Manufacturer</p></div>
+              <div class="fivecol4"><p>Model No.</p></div>
+              <div class="fivecol5"><p>Position</p></div>
+            </div>
+
+            <script type='text/javascript'>
+            $( document ).ready(function() {
+                  $('.hidden_details').hide();
+
+                  $('.fa-plus-circle').click(function() {
+                    var $outeroff = $(this).closest('.rowoff');
+                    var $outeron = $(this).closest('.rowon');
+                      $outeroff.find('.hidden_details').slideToggle();
+                      $outeron.find('.hidden_details').slideToggle();
+                  });
+
+              });
+
+
+            </script>
+
+            <div id="eventscal">
+                <!--start Equipment-->
+              <div class="rowhold" id="seminars">
+
+
+                  <div class="rowoff" id="toprow">
+                    <div class="fivecol1"><p>Autoclave</p></div>
+                 	  <div class="fivecol2"><p>604 CRB</p></div>
+                    <div class="fivecol3"><p>Steris</p></div>
+                    <div class="fivecol4"><p>SG-120</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Autoclave</p></div>
+                 	  <div class="fivecol2"><p>745 CRB</p></div>
+                    <div class="fivecol3"><p>Steris</p></div>
+                    <div class="fivecol4"><p>SG-120</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Autoclave                   Back-up ONLY</p></div>
+                 	  <div class="fivecol2"><p>604 CRB</p></div>
+                    <div class="fivecol3"><p>Steris</p></div>
+                    <div class="fivecol4"><p>SG-120</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Centrifuge - Table top</p></div>
+                 	  <div class="fivecol2"><p>610 CRB</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>Allegra x_14R</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Centrifuge - Ultra</p></div>
+                 	  <div class="fivecol2"><p>610 CRB</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>Optima XPN-80</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Centrifuge - Ultra</p></div>
+                 	  <div class="fivecol2"><p>610 CRB</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>Optima Max TL           120,000 rpm</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Centrifuge - Ultra</p></div>
+                 	  <div class="fivecol2"><p>647 CRB Deutsch Lab</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>Optima TLX-CE</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+              	  <div class="rowon">
+                    <div class="fivecol1"><p>Centrifuge - Ultra</p></div>
+                 	  <div class="fivecol2"><p>710 CRB</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>Optima Ultra L-80XP</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Centrifuge - Ultra</p></div>
+                    <div class="fivecol2"><p>710 CRB</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>Ultra L8-80</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Concentrator</p></div>
+                    <div class="fivecol2"><p>703 CRB</p></div>
+                    <div class="fivecol3"><p>GeneVac</p></div>
+                    <div class="fivecol4"><p>DUC 1200C00</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Dry Ice Chest</p></div>
+                    <div class="fivecol2"><p>604 CRB</p></div>
+                    <div class="fivecol3"><p>&nbsp;</p></div>
+                    <div class="fivecol4"><p>&nbsp;</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Dry Ice Chest</p></div>
+                    <div class="fivecol2"><p>610 CRB</p></div>
+                    <div class="fivecol3"><p>&nbsp;</p></div>
+                    <div class="fivecol4"><p>&nbsp;</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Film Processor - Wet Developer</p></div>
+                    <div class="fivecol2"><p>610A CRB</p></div>
+                    <div class="fivecol3"><p>Konica</p></div>
+                    <div class="fivecol4"><p>SRX-101A</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Freeze Dryer</p></div>
+                    <div class="fivecol2"><p>703 CRB</p></div>
+                    <div class="fivecol3"><p>Sp Scientific</p></div>
+                    <div class="fivecol4"><p>Sentry 2.0</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Freezer -80C Back-up ONLY</p></div>
+                    <div class="fivecol2"><p>604 CRB</p></div>
+                    <div class="fivecol3"><p>Forma Scientific</p></div>
+                    <div class="fivecol4"><p>&nbsp;</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Freezer -80C Back-up ONLY</p></div>
+                    <div class="fivecol2"><p>610 CRB</p></div>
+                    <div class="fivecol3"><p>Panasonic</p></div>
+                    <div class="fivecol4"><p>&nbsp;</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Freezer -80C Back-up ONLY</p></div>
+                    <div class="fivecol2"><p>710 CRB</p></div>
+                    <div class="fivecol3"><p>Panasonic</p></div>
+                    <div class="fivecol4"><p>MDFU500VXC-PA</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Gel Imager</p></div>
+                    <div class="fivecol2"><p>703 CRB</p></div>
+                    <div class="fivecol3"><p>Syngene</p></div>
+                    <div class="fivecol4"><p>G:Box</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Glassware Washer</p></div>
+                    <div class="fivecol2"><p>604 CRB</p></div>
+                    <div class="fivecol3"><p>Steris</p></div>
+                    <div class="fivecol4"><p>Reliance 400</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Glassware Washer     Back-up ONLY</p></div>
+                    <div class="fivecol2"><p>604 CRB</p></div>
+                    <div class="fivecol3"><p>Steris</p></div>
+                    <div class="fivecol4"><p>Reliance 400</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Ice Maker</p></div>
+                    <div class="fivecol2"><p>604 CRB</p></div>
+                    <div class="fivecol3"><p>Scotsman</p></div>
+                    <div class="fivecol4"><p>&nbsp;</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Ice Maker</p></div>
+                    <div class="fivecol2"><p>710 CRB</p></div>
+                    <div class="fivecol3"><p>Cornelius</p></div>
+                    <div class="fivecol4"><p>&nbsp;</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Incubator/Shaker  0-40C</p></div>
+                    <div class="fivecol2"><p>710 CRB</p></div>
+                    <div class="fivecol3"><p>Thermo Scientific</p></div>
+                    <div class="fivecol4"><p>493</p></div>
+                    <div class="fivecol5"><p>Floor-stacked</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Incubator/Shaker  0-40C</p></div>
+                    <div class="fivecol2"><p>710 CRB</p></div>
+                    <div class="fivecol3"><p>Thermo Scientific</p></div>
+                    <div class="fivecol4"><p>493</p></div>
+                    <div class="fivecol5"><p>Top-stacked</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Liquid Nitrogen Tank</p></div>
+                    <div class="fivecol2"><p>703 CRB</p></div>
+                    <div class="fivecol3"><p>&nbsp;</p></div>
+                    <div class="fivecol4"><p>&nbsp;</p></div>
+                    <div class="fivecol5"><p>Floor</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Pump</p></div>
+                    <div class="fivecol2"><p>703 CRB</p></div>
+                    <div class="fivecol3"><p>Sp Scientific</p></div>
+                    <div class="fivecol4"><p>2005SD</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Reader</p></div>
+                    <div class="fivecol2"><p>703 CRB</p></div>
+                    <div class="fivecol3"><p>Fisher</p></div>
+                    <div class="fivecol4"><p>Cytation 5 Multimode</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Rotor</p></div>
+                    <div class="fivecol2"><p>610C CRB Cold Room</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>SW-28</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Rotor</p></div>
+                    <div class="fivecol2"><p>610C CRB Cold Room</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>TY-45TI</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Rotor</p></div>
+                    <div class="fivecol2"><p>610C CRB Cold Room</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>TLA-120.2</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Rotor</p></div>
+                    <div class="fivecol2"><p>610C CRB Cold Room</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>TLA-10</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Rotor</p></div>
+                    <div class="fivecol2"><p>610C CRB Cold Room</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>TY-50.2TI</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowoff">
+                    <div class="fivecol1"><p>Rotor</p></div>
+                    <div class="fivecol2"><p>643 CRB Cold Room</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>JA-14</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+                  <div class="rowon">
+                    <div class="fivecol1"><p>Rotor</p></div>
+                    <div class="fivecol2"><p>647 CRB Deutsch Lab</p></div>
+                    <div class="fivecol3"><p>Beckman</p></div>
+                    <div class="fivecol4"><p>TLA-100.3</p></div>
+                    <div class="fivecol5"><p>Bench</p></div>
+                  </div>
+
+              </div><!--end SEMINARS-->
+
+            </div><!--END CALENDAR-->
+
+            <br class="clear"><br><br>
+
+        </div><!--End Content-->
+    </div><!--End Container-->
+
+
+    <div id="footer">
+        <div class="footercontent">
+            <ul id="footer1">
+                <li><p>700 Clinical Research Building</p></li>
+                <li><p>415 Curie Boulevard</p></li>
+                <li><p>Philadelphia, PA 19104</p></li>
+            </ul><!--End Footer1-->
+            <ul id="footer2">
+                <li><p>tel: 215-898-8725</p></li>
+                <li><p>fax: 215-573-2273</p></li>
+                <li><p><a href="mailto:phys@pennmedicine.upenn.edu">phys@pennmedicine.upenn.edu</a></p></li>
+            </ul><!--End Footer2-->
+            <div id="footer3">
+                <div class="social1" onClick="window.open( 'https://www.facebook.com/UPennPhys?fref=ts','_blank' ); return false;"><img src="images/general/social/facebook.png"></div>
+                <div class="social1" onClick="window.open( 'http://www.twitter.com/UPennPhysiology','_blank' ); return false;"><img src="images/general/social/twitter.png"></div>
+                <div class="social1" onClick="window.open( 'http://instagram.com/upenn_physiology#','_blank' ); return false;"><img src="images/general/social/instagram.png"></div>
+                <div class="social2" onClick="window.open( '#','_self' ); return false;"><p>Go To Top</p></div>
+            </div><!--End Footer3-->
+                <br class="clear">
+            <div class="copyright">
+                <p class="sitemaplink"><a href="sitemap.html">Site Map</a></p>
+                <p>© 2018 University of Pennsylvania. All rights are reserved.</p>
+            </div><!--End Copyright-->
+        </div><!--End Footer content-->
+    </div><!--End Footer-->
+
+    </body>
+</html>
